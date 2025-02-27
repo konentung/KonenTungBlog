@@ -1,0 +1,97 @@
+baseURL = "https://g1en.site"
+defaultContentLanguage = "zh"
+languageCode = "zh-Hans"
+title = "g1eny0ung's Blog"
+theme = "dream"
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+# [services]
+# [services.disqus]
+# shortname = "g1eny0ung"
+# [services.googleAnalytics]
+# ID = "G-K6V0YY3HWS"
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+[markup.highlight]
+noClasses = false
+
+# [taxonomies]
+# category = "categories"
+# tag = "tags"
+# series = "series"
+
+[params]
+zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "me/background.jpg"
+# backgroundImageDark = ""
+
+images = ["me/background.jpg"]
+
+author = "g1eny0ung"
+description = "The life record of g1eny0ung is presented here."
+avatar = "me/yy.jpg"
+headerTitle = "g1eny0ung's Blog"
+motto = "与其感慨路难行，不如马上出发。"
+
+# footerBottomText = ""
+
+rss = true
+
+# utterancesRepo = "g1eny0ung/g1eny0ung.github.io"
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+email = "g1enyy0ung@gmail.com"
+
+siteStartYear = 2016
+
+favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>'
+
+# Syntax highlighting
+customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
+collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+[params.navItems]
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+# jsDateFormat = "yyyy年MM月dd日，cccc"
