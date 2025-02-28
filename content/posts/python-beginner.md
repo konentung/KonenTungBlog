@@ -14,7 +14,7 @@ tags:
   - Python
   - 開發環境建置
 # nolastmod: true
-draft: true
+draft: false
 ---
 
 Python Venv 環境建置

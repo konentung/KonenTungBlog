@@ -14,7 +14,7 @@ tags:
   - Java
   - 開發環境建置
 # nolastmod: true
-draft: true
+draft: false
 ---
 
 Java 開發環境建置
