@@ -14,25 +14,21 @@ other = "Arhiv"
 other = "Vse oznake"
 
 [tag]
-one = "1 oznaka"
 other = "{{ .Count }} oznaki"
 
 [allCategories]
 other = "Vse kategorije"
 
 [category]
-one = "1 kategorija"
 other = "{{ .Count }} kategoriji"
 
 [article]
-one = "1 članek"
 other = "{{ .Count }} članka"
 
 [socialLinks]
 other = "Povezave do družabnih medijev"
 
 [minuteRead]
-one = " minuta za branje"
 other = " minuti za branje"
 
 [updatedAt]

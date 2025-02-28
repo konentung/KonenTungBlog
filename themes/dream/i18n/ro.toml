@@ -14,25 +14,21 @@ other = "Arhive"
 other = "Toate etichetele"
 
 [tag]
-one = "1 etichetă"
 other = "{{ .Count }} etichete"
 
 [allCategories]
 other = "Toate categoriile"
 
 [category]
-one = "1 categorie"
 other = "{{ .Count }} categorii"
 
 [article]
-one = "1 articol"
 other = "{{ .Count }} articole"
 
 [socialLinks]
 other = "Link-uri de social media"
 
 [minuteRead]
-one = " minut de citit"
 other = " minute de citire"
 
 [updatedAt]

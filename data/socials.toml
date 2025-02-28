@@ -7,4 +7,5 @@ socials = [
   # { href = "https://www.linkedin.com/in/Konentung", target = "_blank", icon = "logo-linkedin", title = "Linkedin" },
   # { href = "https://stackoverflow.com/users/5676489/Konentung", target = "_blank", icon = "logo-stackoverflow", title = "stack overflow" },
   # { href = "https://codepen.io/Konentung", target="_blank", icon = "logo-codepen", title = "Codepen" },
+  { herf = "https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w", target = "_blank", icon = "logo-youtube", title = "Youtube"},
 ]

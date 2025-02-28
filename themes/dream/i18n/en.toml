@@ -22,13 +22,10 @@ updatedAt = "Updated at"
 socialLinks = "Social Links"
 
 [article]
-one = "1 article"
 other = "{{ .Count }} articles"
 
 [category]
-one = "1 category"
 other = "{{ .Count }} categories"
 
 [tag]
-one = "1 tag"
 other = "{{ .Count }} tags"

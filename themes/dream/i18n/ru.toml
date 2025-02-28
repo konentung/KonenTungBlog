@@ -14,7 +14,6 @@ other = "Архивы"
 other = "Все теги"
 
 [tag]
-one = "1 тег"
 few = "{{ .Count }} тега"
 many = "{{ .Count }} тегов"
 other = "{{ .Count }} тегов"
@@ -23,13 +22,11 @@ other = "{{ .Count }} тегов"
 other = "Все категории"
 
 [category]
-one = "1 категория"
 few = "{{ .Count }} категории"
 many = "{{ .Count }} категорий"
 other = "{{ .Count }} категорий"
 
 [article]
-one = "1 статья"
 few = "{{ .Count }} статьи"
 many = "{{ .Count }} статей"
 other = "{{ .Count }} статей"
@@ -38,7 +35,6 @@ other = "{{ .Count }} статей"
 other = "Социальные сети"
 
 [minuteRead]
-one = " минута чтения"
 few = " минуты чтения"
 many = " минут чтения"
 other = " минут чтения"

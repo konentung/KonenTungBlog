@@ -20,17 +20,13 @@ updatedAt = "Mise à jour le"
 socialLinks = "Liens sociaux"
 
 [minuteRead]
-one = " minute de lecture"
 other = " minutes de lecture"
 
 [article]
-one = "1 article"
 other = "{{ .Count }} articles"
 
 [category]
-one = "1 catégorie"
 other = "{{ .Count }} catégories"
 
 [tag]
-one = "1 étiquette"
 other = "{{ .Count }} étiquettes"

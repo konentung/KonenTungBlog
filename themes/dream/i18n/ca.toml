@@ -14,25 +14,21 @@ other = "Arxiu"
 other = "Totes les etiquetes"
 
 [tag]
-one = "1 etiqueta"
 other = "{{ .Count }} etiquetes"
 
 [allCategories]
 other = "Totes les categories"
 
 [category]
-one = "1 categoria"
 other = "{{ .Count }} categories"
 
 [article]
-one = "1 article"
 other = "{{ .Count }} articles"
 
 [socialLinks]
 other = "Enllaços de xarxes socials"
 
 [minuteRead]
-one = " minut de lectura"
 other = " minuts de lectura"
 
 [updatedAt]

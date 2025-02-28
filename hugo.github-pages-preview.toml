@@ -1,4 +1,4 @@
-baseURL = "https://KonenTungBlog.github.io/blog"
+baseURL = "https://KonenTung.github.io/blog"
 defaultContentLanguage = "zh"
 languageCode = "zh-tw"
 title = "Konentung Blog"
@@ -43,7 +43,7 @@ darkTheme = "forest"
 images = ["me/background.jpg"]
 
 author = "Konen Tung"
-description = "The life record of Konen Tung is presented here."
+description = "Aincrad of Konen Tung."
 avatar = "me/profile.jpg"
 headerTitle = "Konentung's Blog"
 motto = "好きなことに締め切りはない"
@@ -63,7 +63,7 @@ rss = true
 
 email = "konen93@gmail.com"
 
-siteStartYear = 2022
+siteStartYear = 2025
 
 favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🖥️</text></svg>"></link>'
 
@@ -79,7 +79,7 @@ showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
-reorderShares = ["x", "facebook", "instagram"]
+reorderShares = ["x", "facebook"]
 
 [params.navItems]
 

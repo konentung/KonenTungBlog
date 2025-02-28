@@ -14,25 +14,21 @@ other = "أرشيف"
 other = "كل العلامات"
 
 [tag]
-one = "1 علامة"
 other = "{{ .Count }} علامتان"
 
 [allCategories]
 other = "جميع الفئات"
 
 [category]
-one = "1 فئة"
 other = "{{ .Count }} فئات"
 
 [article]
-one = "1 مقال"
 other = "{{ .Count }} مقالات"
 
 [socialLinks]
 other = "روابط وسائل التواصل الاجتماعي"
 
 [minuteRead]
-one = " قراءة دقيقة"
 other = " ست دقائق للقر"
 
 [updatedAt]

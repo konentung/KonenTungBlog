@@ -17,25 +17,21 @@ other = "Archivi"
 other = "Tutti i tag"
 
 [tag]
-one = "Un tag"
 other = "{{ .Count }} tag"
 
 [allCategories]
 other = "Tutte le categorie"
 
 [category]
-one = "Una categoria"
 other = "{{ .Count }} categorie"
 
 [article]
-one = "Un articolo"
 other = "{{ .Count }} articoli"
 
 [socialLinks]
 other = "Social"
 
 [minuteRead]
-one = " minuto"
 other = " minuti"
 
 [updatedAt]

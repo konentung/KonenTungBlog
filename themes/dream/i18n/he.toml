@@ -14,25 +14,21 @@ other = "ארכיון"
 other = "כל התגים"
 
 [tag]
-one = "1 תג"
 other = "תגים {{ .Count }}"
 
 [allCategories]
 other = "כל הקטגוריות"
 
 [category]
-one = "1 קטגוריה"
 other = "קטגוריות {{ .Count }}"
 
 [article]
-one = "מאמר  1"
 other = "מאמרים {{ .Count }}"
 
 [socialLinks]
 other = "קישורים למדיה חברתית"
 
 [minuteRead]
-one = " דקה לקרוא"
 other = " דקות לקריאה"
 
 [updatedAt]

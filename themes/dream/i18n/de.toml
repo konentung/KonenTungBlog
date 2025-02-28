@@ -14,18 +14,15 @@ other = "Archiv"
 other = "Alle Tags"
 
 [tag]
-one = "1 tag"
 other = "{{ .Count }} Tags"
 
 [allCategories]
 other = "Alle Kategorien"
 
 [category]
-one = "1 Kategorie"
 other = "{{ .Count }} Kategorien"
 
 [article]
-one = "1 Artikel"
 other = "{{ .Count }} Artikel"
 
 [socialLinks]

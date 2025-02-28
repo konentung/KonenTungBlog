@@ -1,16 +1,28 @@
 ---
-title: Python
-date: 2016-12-30T22:36:49+08:00
+title: Python Beginner
+date: 2025-02-28T18:38:44+08:00
+lastmod: 2025-02-28T18:38:44+08:00
 author: Konen Tung
-category:
+# avatar: /img/author.jpg
+# authorlink: https://author.site
+cover: https://hackmd.io/_uploads/rJF6IMf_1g.png
+# images:
+#   - /img/cover.jpg
+categories:
   - 程式語言
-  - 開發環境
+tags:
+  - Python
+  - 開發環境建置
+# nolastmod: true
+draft: true
 ---
+
+Python Venv 環境建置
+
+<!--more-->
 
 Python
 ===
-
-<!--more-->
 
 ## Python安裝
 1. 至[Python官網](https://www.python.org/downloads/)下載Python的安裝檔(本教學以3.12.2的版本為例)
@@ -108,3 +120,4 @@ for <儲存的變數> in <序列型別的資料或數字>:
 while <成立的條件>:
     <執行的程式碼(需要有中止條件)>
 ```
+

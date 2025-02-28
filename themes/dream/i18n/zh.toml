@@ -12,22 +12,19 @@ search = "搜尋"
 prevPage = "上一頁"
 nextPage = "下一頁"
 
-archives = "歸檔"
+archives = "所有文章"
 allCategories = "所有分類"
 allTags = "所有標籤"
 
 minuteRead = "分鐘閱讀"
 updatedAt = "更新於"
-socialLinks = "社交連結"
+socialLinks = "社群連結"
 
 [article]
-one = "1篇文章"
 other = "{{ .Count }}篇文章"
 
 [category]
-one = "1分類"
 other = "{{ .Count }}分類"
 
 [tag]
-one = "1標籤"
 other = "{{ .Count }}標籤"

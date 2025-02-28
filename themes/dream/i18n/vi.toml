@@ -22,13 +22,10 @@ updatedAt = "Cập nhật lúc"
 socialLinks = "Liên kết xã hội"
 
 [article]
-one = "1 bài viết"
 other = "{{ .Count }} bài viết"
 
 [category]
-one = "1 danh mục"
 other = "{{ .Count }} danh mục"
 
 [tag]
-one = "1 thẻ"
 other = "{{ .Count }} thẻ"

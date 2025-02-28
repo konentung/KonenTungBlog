@@ -14,25 +14,21 @@ other = "আর্কাইভ"
 other = "সকল ট্যাগ"
 
 [tag]
-one = "একটি ট্যাগ"
 other = "{{ .Count }}টি ট্যাগ"
 
 [allCategories]
 other = "সকল ক্যাটাগরি"
 
 [category]
-one = "একটি ক্যাটাগরি"
 other = "{{ .Count }}টি ক্যাটাগরি"
 
 [article]
-one = "একটি আর্টিকেল"
 other = "{{ .Count }}টি আর্টিকেল"
 
 [socialLinks]
 other = "সোশাল লিঙ্কস"
 
 [minuteRead]
-one = " মিনিট"
 other = " মিনিট"
 
 [updatedAt]
