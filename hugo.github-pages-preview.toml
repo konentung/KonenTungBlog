@@ -1,7 +1,7 @@
 baseURL = "https://KonenTungBlog.github.io/blog"
 defaultContentLanguage = "zh"
 languageCode = "zh-tw"
-title = "Konentung's Blog"
+title = "Konentung Blog"
 theme = "dream"
 
 enableGitInfo = true
@@ -10,10 +10,8 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 
 # [services]
-# [services.disqus]
-# shortname = "Konentung"
 # [services.googleAnalytics]
-# ID = "G-K6V0YY3HWS"
+# ID = "G-2PRKCD13VJ"
 
 [markup]
 [markup.goldmark.parser]

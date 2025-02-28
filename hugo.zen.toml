@@ -1,7 +1,7 @@
-baseURL = "https://g1en.site"
+baseURL = "https://KonenTung.site"
 defaultContentLanguage = "zh"
-languageCode = "zh-Hans"
-title = "Konentung's Blog"
+languageCode = "zh-tw"
+title = "Konentung Blog"
 theme = "dream"
 
 enableGitInfo = true
@@ -10,10 +10,8 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 
 # [services]
-# [services.disqus]
-# shortname = "konentung"
 # [services.googleAnalytics]
-# ID = "G-K6V0YY3HWS"
+# ID = "G-2PRKCD13VJ"
 
 [markup]
 [markup.goldmark.parser]

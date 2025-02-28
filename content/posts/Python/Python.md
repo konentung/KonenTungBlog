@@ -10,6 +10,8 @@ category:
 Python
 ===
 
+<!--more-->
+
 ## Python安裝
 1. 至[Python官網](https://www.python.org/downloads/)下載Python的安裝檔(本教學以3.12.2的版本為例)
     ![image](https://hackmd.io/_uploads/rJChcWG_kl.png)

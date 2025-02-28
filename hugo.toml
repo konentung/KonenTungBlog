@@ -10,10 +10,8 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 
 [services]
-[services.disqus]
-shortname = "KonenTung"
 [services.googleAnalytics]
-ID = "G-K6V0YY3HWS"
+ID = "G-2PRKCD13VJ"
 
 [markup]
 [markup.goldmark.parser]
@@ -49,7 +47,7 @@ images = ["me/background.jpg"]
 author = "Konen Tung"
 description = "The life record of Konen Tung is presented here."
 avatar = "me/spyware.png"
-headerTitle = "g1eny0ung's Blog"
+headerTitle = "KonenTung's Blog"
 motto = "好きなことに締め切りはない"
 
 # footerBottomText = ""

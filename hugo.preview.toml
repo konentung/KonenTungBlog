@@ -10,10 +10,8 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 
 # [services]
-# [services.disqus]
-# shortname = "konentung"
 # [services.googleAnalytics]
-# ID = "G-K6V0YY3HWS"
+# ID = "G-2PRKCD13VJ"
 
 [markup]
 [markup.goldmark.parser]
