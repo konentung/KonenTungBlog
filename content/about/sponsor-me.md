@@ -1,12 +1,12 @@
 ---
-title: 赞助我（Sponsor Me）
+title: 贊助我（Sponsor Me）
 date: 2019-11-11T01:32:23+08:00
 ---
 
-如果你喜欢我的作品或者发现它们对你有所帮助，可以考虑给我买一杯咖啡 ☕️。这将激励我在未来创作和维护更多的项目。🦾
+如果你喜歡我的作品或者發現它們對你有所幫助，可以考慮給我買一杯咖啡 ☕️。這將激勵我在未來創作和維護更多的項目。🦾
 
-👉 [请我喝一杯咖啡](/posts/buy-me-a-coffee)
+👉 [請我喝一杯咖啡](/posts/buy-me-a-coffee)
 
-If you like my works or find them helpful, please consider buying me a cup of coffee ☕️. It inspires me to create and maintain more projects in the future. 🦾
+如果你喜歡我的作品或者發現它們對你有所幫助，請考慮給我買一杯咖啡 ☕️。它激勵我在未來創作和維護更多的項目。🦾
 
-👉 [Buy me a coffee](/posts/buy-me-a-coffee)
+👉 [請我喝一杯咖啡](/posts/buy-me-a-coffee)

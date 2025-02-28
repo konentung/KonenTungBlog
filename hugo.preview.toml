@@ -11,7 +11,7 @@ hasCJKLanguage = true
 
 # [services]
 # [services.disqus]
-# shortname = "g1eny0ung"
+# shortname = "konentung"
 # [services.googleAnalytics]
 # ID = "G-K6V0YY3HWS"
 
@@ -44,11 +44,11 @@ darkTheme = "forest"
 
 images = ["me/background.jpg"]
 
-author = "g1eny0ung"
-description = "The life record of g1eny0ung is presented here."
+author = "konentung"
+description = "The life record of konentung is presented here."
 avatar = "me/yy.jpg"
-headerTitle = "g1eny0ung's Blog"
-motto = "与其感慨路难行，不如马上出发。"
+headerTitle = "konentung's Blog"
+motto = "好きなことに締め切りはない"
 
 # footerBottomText = ""
 
@@ -63,7 +63,7 @@ rss = true
 # waline = true
 # walineServer = ""
 
-email = "g1enyy0ung@gmail.com"
+email = "konen93@gmail.com"
 
 siteStartYear = 2016
 

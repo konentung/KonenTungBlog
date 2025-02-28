@@ -3,13 +3,12 @@
 
   "entity": {
     "type": "individual",
-    "role": "maintainer",
-    "name": "Yue Yang",
-    "email": "g1enyy0ung+flossfund@gmail.com",
-    "description": "I'm Yue Yang. An open source enthusiast who maintains and participates in many projects. I'm currently working on a project called Chaos Mesh. You can find more information about me on my GitHub page.",
+    "role": "programmer",
+    "name": "Konen Tung",
+    "email": "konen93@gmail.com",
+    "description": "I'm Konen Tung. You can find more information about me on my GitHub page.",
     "webpageUrl": {
-      "url": "https://github.com/g1eny0ung",
-      "wellKnown": "https://github.com/g1eny0ung/g1eny0ung/blob/master/.well-known/funding-manifest-urls"
+      "url": "https://github.com/konentung"
     }
   },
 
