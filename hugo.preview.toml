@@ -1,7 +1,7 @@
 baseURL = "https://KonenTung.site"
 defaultContentLanguage = "zh"
 languageCode = "zh-tw"
-title = "Konentung's Blog"
+title = "Konentung Blog"
 theme = "dream"
 
 enableGitInfo = true

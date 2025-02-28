@@ -1,6 +1,10 @@
 ---
 title: Python
-
+date: 2016-12-30T22:36:49+08:00
+author: Konen Tung
+category:
+  - 程式語言
+  - 開發環境
 ---
 
 Python
