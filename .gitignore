@@ -1,8 +1,4 @@
 .DS_Store
 
-# output
-public
-
 # hugo
-resources
 .hugo_build.lock

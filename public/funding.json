@@ -1,0 +1,32 @@
+{
+  "version": "v1.0.0",
+
+  "entity": {
+    "type": "individual",
+    "role": "programmer",
+    "name": "Konen Tung",
+    "email": "konen93@gmail.com",
+    "description": "I'm Konen Tung. You can find more information about me on my GitHub page.",
+    "webpageUrl": {
+      "url": "https://github.com/konentung"
+    }
+  },
+
+  "projects": [
+    {
+      "guid": "chaos-mesh",
+      "name": "Chaos Mesh",
+      "description": "A Chaos Engineering Platform for Kubernetes.",
+      "webpageUrl": {
+        "url": "https://chaos-mesh.org",
+        "wellKnown": "https://chaos-mesh.org/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/chaos-mesh/chaos-mesh",
+        "wellKnown": "https://github.com/chaos-mesh/chaos-mesh/blob/master/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["cloud", "devops", "linux", "networking", "operating-systems", "server", "software-engineering"]
+    }
+  ]
+}

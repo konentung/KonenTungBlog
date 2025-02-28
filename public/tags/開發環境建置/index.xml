@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>開發環境建置 on Aincrad</title>
+    <link>http://localhost:1313/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/</link>
+    <description>Recent content in 開發環境建置 on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 28 Feb 2025 19:22:58 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Beginner</title>
+      <link>http://localhost:1313/posts/java-beginner/</link>
+      <pubDate>Fri, 28 Feb 2025 19:22:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/java-beginner/</guid>
+      <description>&lt;p&gt;Java 開發環境建置&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Beginner</title>
+      <link>http://localhost:1313/posts/python-beginner/</link>
+      <pubDate>Fri, 28 Feb 2025 18:38:44 +0800</pubDate>
+      <guid>http://localhost:1313/posts/python-beginner/</guid>
+      <description>&lt;p&gt;Python Venv 環境建置&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
