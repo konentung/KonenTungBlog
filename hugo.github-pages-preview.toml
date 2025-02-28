@@ -1,7 +1,7 @@
-baseURL = "https://g1eny0ung.github.io/blog"
+baseURL = "https://KonenTungBlog.github.io/blog"
 defaultContentLanguage = "zh"
-languageCode = "zh-Hans"
-title = "g1eny0ung's Blog"
+languageCode = "zh-tw"
+title = "Konentung's Blog"
 theme = "dream"
 
 enableGitInfo = true

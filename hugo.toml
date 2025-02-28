@@ -1,6 +1,6 @@
 baseURL = "https://KonenTung.site"
 defaultContentLanguage = "zh"
-languageCode = "zh-Hans"
+languageCode = "zh-tw"
 title = "Konentung's Blog"
 theme = "dream"
 
