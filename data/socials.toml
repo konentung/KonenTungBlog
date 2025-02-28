@@ -3,7 +3,7 @@ socials = [
   { href = "https://github.com/Konentung", target = "_blank", icon = "logo-github", title = "GitHub" },
   { href = "https://x.com/Konentung", target = "_blank", icon = "logo-x", title = "X" },
   { href = "https://facebook.com/Konentung", target="_blank", icon = "logo-facebook", title = "Facebook" },
-  { href = "https://instagram.com/Konentung", target="_blank", icon = "logo-instagram", title = "Instagram" },
+  { href = "https://instagram.com/hercules._.o7l6", target="_blank", icon = "logo-instagram", title = "Instagram" },
   # { href = "https://www.linkedin.com/in/Konentung", target = "_blank", icon = "logo-linkedin", title = "Linkedin" },
   # { href = "https://stackoverflow.com/users/5676489/Konentung", target = "_blank", icon = "logo-stackoverflow", title = "stack overflow" },
   # { href = "https://codepen.io/Konentung", target="_blank", icon = "logo-codepen", title = "Codepen" },

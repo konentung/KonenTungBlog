@@ -44,9 +44,9 @@ darkTheme = "forest"
 
 images = ["me/background.jpg"]
 
-author = "konentung"
-description = "The life record of konentung is presented here."
-avatar = "me/spyware.jpg"
+author = "Konen Tung"
+description = "The life record of Konen Tung is presented here."
+avatar = "me/profile.jpg"
 headerTitle = "Konentung's Blog"
 motto = "好きなことに締め切りはない"
 
@@ -65,23 +65,23 @@ rss = true
 
 email = "konen93@gmail.com"
 
-siteStartYear = 2016
+siteStartYear = 2022
 
-favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>'
+favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🖥️</text></svg>"></link>'
 
 # Syntax highlighting
 customSyntaxHighlighting = true
 
 # options
 stickyNav = true
-# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
+reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
 collapseNavItems = ["posts", "categories", "tags"]
 # noDefaultSummaryCover = true
 showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
-# reorderShares = ["x", "facebook", "whatsapp"]
+reorderShares = ["x", "facebook", "instagram"]
 
 [params.navItems]
 
