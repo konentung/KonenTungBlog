@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on Aincrad</title>
+    <link>http://localhost:1313/tags/tag1/</link>
+    <description>Recent content in Tag1 on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 07 Mar 2025 16:17:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pygame Beginner</title>
+      <link>http://localhost:1313/posts/pygame-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 16:17:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/pygame-beginner/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

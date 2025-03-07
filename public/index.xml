@@ -6,8 +6,22 @@
     <description>Recent content on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 07 Mar 2025 15:13:04 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 16:17:40 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pygame Beginner</title>
+      <link>http://localhost:1313/posts/pygame-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 16:17:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/pygame-beginner/</guid>
+      <description>&lt;p&gt;Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anaconda Beginner</title>
+      <link>http://localhost:1313/posts/anaconda-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 16:02:13 +0800</pubDate>
+      <guid>http://localhost:1313/posts/anaconda-beginner/</guid>
+      <description>&lt;p&gt;Anaconda的安裝以及環境指令的教學&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Django Beginner</title>
       <link>http://localhost:1313/posts/django-beginner/</link>

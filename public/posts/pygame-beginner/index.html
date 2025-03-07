@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="zh-tw"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pygame Beginner | Aincrad</title>
+
+    
+  
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🖥️</text></svg>"></link>
+  
+
+
+<link rel="canonical" href="http://localhost:1313/posts/pygame-beginner/" />
+
+
+
+<meta name="author" content="Konen Tung" />
+<meta name="description" content="Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計
+" />
+
+
+<meta name="keywords" content="Python,Pygame">
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/pygame-beginner/">
+  <meta property="og:site_name" content="Aincrad">
+  <meta property="og:title" content="Pygame Beginner">
+  <meta property="og:description" content="Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計">
+  <meta property="og:locale" content="zh_tw">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-07T16:17:40+08:00">
+    <meta property="article:modified_time" content="2025-03-07T16:17:40+08:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Pygame">
+    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
+  <meta name="twitter:title" content="Pygame Beginner">
+  <meta name="twitter:description" content="Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計">
+      <meta name="twitter:site" content="@Konentung">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<link rel="stylesheet" data-custom-syntax-highlighting />
+<style>
+  .chroma {
+    padding: 1em;
+    background-color: var(--dream-pre-bg, #f5f5f5);
+    border-radius: .5em;
+    overflow: auto;
+  }
+
+  html.dark .chroma {
+    background-color: var(--dream-pre-bg-dark, #262626);
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻轉一下！">
+        <div class="h-10 rounded-full">
+          <img src="/me/profile.jpg" alt="KonenTung&#39;s Blog" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          KonenTung&#39;s Blog
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">好きなことに締め切りはない</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="關於">
+    <ion-icon name="information-circle"></ion-icon>關於</div>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="搜尋">
+    <ion-icon name="search"></ion-icon>
+    搜尋
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/konentung" target="_blank" title="GitHub">
+    
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w" target="_blank" title="Youtube">
+    
+    <ion-icon name="logo-youtube"></ion-icon>
+    
+    Youtube
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="所有文章">
+    <ion-icon name="archive"></ion-icon>
+    所有文章
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分類">
+    <ion-icon name="grid"></ion-icon>
+    所有分類
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有標籤">
+    <ion-icon name="pricetags"></ion-icon>
+    所有標籤
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="關於"
+      >關於</div>
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="搜尋">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/konentung" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+      
+      
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w" target="_blank" title="Youtube">
+    <ion-icon class="group-hover:text-primary-content" name="logo-youtube"></ion-icon>
+  </a>
+  
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="所有文章">
+    <ion-icon name="archive"></ion-icon>
+    所有文章
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分類">
+    <ion-icon name="grid"></ion-icon>
+    所有分類
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有標籤">
+    <ion-icon name="pricetags"></ion-icon>
+    所有標籤
+  </a>
+</li>
+
+
+          
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </ul>
+      </div>
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+      <div class="dream-adsense w-2/3">
+        <script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2097283051393565"
+  crossorigin="anonymous"
+></script>
+
+<ins
+  class="adsbygoogle"
+  style="display: block"
+  data-ad-client="ca-pub-2097283051393565"
+  data-ad-slot="5932241739"
+  data-ad-format="rectangle"
+  data-full-width-responsive="true"
+></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      </div>
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="Pygame Beginner">
+  <meta itemprop="description" content="Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計">
+  <meta itemprop="datePublished" content="2025-03-07T16:17:40+08:00">
+  <meta itemprop="dateModified" content="2025-03-07T16:17:40+08:00">
+  <meta itemprop="wordCount" content="932">
+  <meta itemprop="image" content="http://localhost:1313/me/background.jpg">
+  <meta itemprop="keywords" content="Python,Pygame">
+
+      <header>
+        <h1 itemprop="headline">Pygame Beginner</h1>
+        <p class="text-sm">
+          
+            <span data-format="luxon">2025-03-07T16:17:40&#43;08:00</span>
+          
+
+          | <span>2分鐘閱讀</span>
+
+          
+          | <span>更新於
+            
+              <span data-format="luxon">2025-03-07T16:17:40&#43;08:00</span>
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Konen Tung</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+    
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=Pygame%20Beginner&amp;url=http://localhost:1313/posts/pygame-beginner/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/pygame-beginner/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <p>Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計</p>
+<h1 id="pygame">Pygame</h1>
+<h3 id="pygame簡介">Pygame簡介</h3>
+<p><code>pygame</code>是一個Python的套件，主要用來創建 2D 遊戲和多媒體應用程式。它提供了一系列的功能，使開發者能夠輕鬆地處理圖形、音效、動畫以及使用者互動等方面。</p>
+<h2 id="建立開發環境">建立開發環境</h2>
+<ol>
+<li>確定使否已安裝Python</li>
+</ol>
+<pre tabindex="0"><code class="language-shell=" data-lang="shell=">python --version
+</code></pre><ol start="2">
+<li>開啟要建立環境的路徑</li>
+</ol>
+<pre tabindex="0"><code class="language-shell=" data-lang="shell=">cd &lt;路徑位置&gt;
+</code></pre><ol start="3">
+<li>輸入下方指令建立一個新的環境</li>
+</ol>
+<pre tabindex="0"><code class="language-shell=" data-lang="shell=">python -m venv &lt;環境名稱&gt;
+</code></pre><ol start="4">
+<li>進入虛擬環境路徑並啟動</li>
+</ol>
+<pre tabindex="0"><code class="language-shell=" data-lang="shell=">cd &lt;路徑位置&gt;\Scripts
+// 切換玩路徑後再執行
+activate.bat
+</code></pre><ol start="5">
+<li>切換完成後輸入下面指令安裝套件</li>
+</ol>
+<pre tabindex="0"><code class="language-shell=" data-lang="shell=">pip install pygame
+</code></pre><p>:::success
+這樣就完成環境設定了❗
+:::</p>
+<h2 id="基本pygame指令">基本Pygame指令</h2>
+<h3 id="基本範例程式碼">基本範例程式碼</h3>
+<p>下面是官方提供的基本的範例程式碼，包括最基本的pygame需要的東西．後面會依序介紹他們的功能</p>
+<pre tabindex="0"><code class="language-python=" data-lang="python="># Example file showing a basic pygame &#34;game loop&#34;
+import pygame
+
+# pygame setup
+pygame.init()
+screen = pygame.display.set_mode((1280, 720))
+clock = pygame.time.Clock()
+running = True
+
+while running:
+    # poll for events
+    # pygame.QUIT event means the user clicked X to close your window
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # fill the screen with a color to wipe away anything from last frame
+    screen.fill(&#34;purple&#34;)
+
+    # RENDER YOUR GAME HERE
+
+    # flip() the display to put your work on screen
+    pygame.display.flip()
+
+    clock.tick(60)  # limits FPS to 60
+
+pygame.quit()
+</code></pre><h3 id="初始化pygame物件">初始化pygame物件</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+</span></span></code></pre></div><h3 id="顯示視窗">顯示視窗</h3>
+<ol>
+<li>設定顯示視窗物件（指定視窗的高度與寬度, flag是用來設定顯示模式的例如全螢幕等等）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="n">flags</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="2">
+<li>設定視窗標題</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&#34;遊戲標題&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="3">
+<li>顯示更新畫面（可以選擇是否只更新哪個區塊，如未設定則整個畫面更新）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">rectangle</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="4">
+<li>獲取畫面資訊（解析度，顯示方式等）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">info</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">Info</span><span class="p">()</span>
+</span></span></code></pre></div><ol start="5">
+<li>切換螢幕顯示方式（全螢幕🔁視窗）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">toggle_fullscreen</span><span class="p">()</span>
+</span></span></code></pre></div><ol start="6">
+<li>設定視窗的icon</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">icon</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;icon.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_icon</span><span class="p">(</span><span class="n">icon</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="設定畫布">設定畫布</h3>
+<p><code>Surface</code>是Pygame中一個非常重要的物件，它代表了所有可顯示的畫面、圖像或介面元素。幾乎所有在Pygame中的圖形繪製，都是在<code>Surface</code>上進行的。</p>
+<ol>
+<li>創建Surface</li>
+</ol>
+<pre tabindex="0"><code class="language-python=" data-lang="python="># 創建一個 800x600 的空白 Surface
+surface = pygame.Surface((800, 600))
+</code></pre><ol start="2">
+<li>繪製圖形和顏色</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">surface</span><span class="o">.</span><span class="n">fill</span><span class="p">((</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># 填充紅色</span>
+</span></span><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>  <span class="c1"># 繪製綠色矩形</span>
+</span></span></code></pre></div><ol start="3">
+<li>Surface圖像</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">surface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># 將圖像繪製到surface上</span>
+</span></span></code></pre></div><ol start="4">
+<li>複製Surface</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">new_surface</span> <span class="o">=</span> <span class="n">surface</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># 複製 Surface</span>
+</span></span></code></pre></div><ol start="5">
+<li>旋轉Surface</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">rotated_surface</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>  <span class="c1"># 旋轉 Surface</span>
+</span></span></code></pre></div><ol start="6">
+<li>透明度</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">surface</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>  <span class="c1"># 設定透明度（範圍：0-255，0為完全透明）</span>
+</span></span></code></pre></div><ol start="7">
+<li>繪製Surface到視窗中</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># 將 surface 繪製到螢幕</span>
+</span></span><span class="line"><span class="cl"><span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>  <span class="c1"># 更新螢幕顯示</span>
+</span></span></code></pre></div><p>:::success
+👍 前面說明完了最基本的語法，有了這些語法我們可以開始製作簡易的動畫了
+:::</p>
+
+        
+          <div class="dream-adsense-post-bottom">
+            <script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2097283051393565"
+  crossorigin="anonymous"
+></script>
+<ins
+  class="adsbygoogle"
+  style="display: block; text-align: center"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-2097283051393565"
+  data-ad-slot="4530727822"
+></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+          </div>
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/anaconda-beginner/" title="Anaconda Beginner">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一頁</span>
+            <span class="max-w-48 truncate">Anaconda Beginner</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+<template x-if="['localhost', '127.0.0.1'].indexOf(window.location.hostname) == -1">
+  <article>
+    <script
+      src="https://utteranc.es/client.js"
+      repo="konentung/konentung.github.io"
+      issue-term="og:title"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </article>
+</template>
+
+
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#pygame簡介">Pygame簡介</a></li>
+      </ul>
+    </li>
+    <li><a href="#建立開發環境">建立開發環境</a></li>
+    <li><a href="#基本pygame指令">基本Pygame指令</a>
+      <ul>
+        <li><a href="#基本範例程式碼">基本範例程式碼</a></li>
+        <li><a href="#初始化pygame物件">初始化pygame物件</a></li>
+        <li><a href="#顯示視窗">顯示視窗</a></li>
+        <li><a href="#設定畫布">設定畫布</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Aincrad
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">關於我</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi，我是<strong>KonenTung</strong>，目前就讀國立臺北教育大學。</p>
+<p>我非常喜歡寫程式以及做一些簡單的教學，希望能帶給也想學這些知識的人，目前已擔任多場工作坊的助教，希望有朝一日能擔任講師進行教學。</p>
+<p>我擅長的程式語言為Python，目前正努力學習人工智慧的相關知識，也會一些網頁的前端及後端概念。</p>
+<p>看動漫以及輕小說是我國高中的興趣，最喜歡的動漫是刀劍神域，夢想也是創建一個Aincrad，希望能應用到目前的AI的技術</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">我的專案（My Projects）</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>
+<p><a href="https://github.com/konentung/OnlineProgrammingPlatform" target="_blank">OnlineProgrammingPlatform</a>
+</p>
+<p>專題的專案</p>
+<p>利用Python的後端框架建立一個遊戲式程式學習的平台</p>
+</li>
+<li>
+<p><a href="https://github.com/konentung/magicBoxBot" target="_blank">magicBoxBot</a>
+</p>
+<p>使用LINE Messaging API串接的LINE Bot，是一個有許多功能的有趣機器人，有串接AI並且可以向他提問呦</p>
+<p>加入好友 -&raquo; <a href="https://line.me/R/ti/p/@544xkvdn" target="_blank">https://line.me/R/ti/p/@544xkvdn</a>
+</p>
+</li>
+<li>
+<p><a href="https://github.com/konentung/mazeSolution" target="_blank">mazeSolution</a>
+</p>
+<p>使用Pygame套件製作的簡易自動解迷宮動畫，雖然只是演算法的作業，但是我想要把它做的具體一點所以就使用Pygame這個套件做動畫並實際演示出演算法的結果</p>
+</li>
+<li>
+<p><a href="https://github.com/konentung/blog" target="_blank">blog</a>
+</p>
+<p>跨平台網頁設計的作業，大一的時候矇矇懂懂得建立了一個個人blog，做的非常辛苦，後來覺得維護太麻煩所以改使用現在這個做為主要的Blog，因為許多筆記都是用md做得所以就不要浪費時間寫一堆html了，直接使用這個hugo的框架建立比較省時也比較便利</p>
+<p>原Blog網址 -&raquo; <a href="https://konentung.github.io/Blog/" target="_blank">https://konentung.github.io/Blog/</a>
+</p>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Workstudy Projects</div>
+
+        <div class="prose dark:prose-invert">
+          <ul>
+<li>
+<p><a href="https://github.com/PYLearning2025/ProgramWeb" target="_blank">ProgramWeb</a>
+</p>
+<p>國科會計畫的專案</p>
+<p>利用Python的後端框架Django製作計畫的專案，並且加入AI提示的小老師，可以回應學生對應的問題</p>
+</li>
+<li>
+<p><a href="https://github.com/bigdatantue/Bigdata-Line-Bot" target="_blank">Bigdata-Line-Bot</a>
+</p>
+<p>教育大數據微學程計畫專用LINE Bot</p>
+<p>使用LINE Bot API建立的LINE Bot，專門用來處理學生對於計畫課程的疑難雜症，設有多項功能，並且連結其他計畫社群以及經營，雖然目前計畫已結束，但是仍然不斷推出新課程供大家學習，建立一個良好的學習環境</p>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">社群連結</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:konen93@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/Konentung" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/Konentung" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://facebook.com/Konentung" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://instagram.com/hercules._.o7l6" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/%E4%BD%B3%E5%92%8C-%E8%91%A3-b1400330a/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://stackoverflow.com/users/23608210/konentung" target="_blank" title="stack overflow">
+      <ion-icon name="logo-stackoverflow"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w" target="_blank" title="Youtube">
+      <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Aincrad
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日")
+    })
+  }
+</script>
+
+
+
+<script>
+  window.customSyntaxHighlighting = {
+    light: "/css/syntax-light.min.css",
+    dark: "/css/syntax-dark.min.css"
+  }
+
+  document.addEventListener('alpine:initialized', () => {
+    var isDark = Alpine.store('darkMode').isDark()
+    var customSyntaxHighlightingUrl = isDark ? window.customSyntaxHighlighting.dark : window.customSyntaxHighlighting.light
+
+    document
+      .querySelector('link[data-custom-syntax-highlighting]')
+      .setAttribute('href', customSyntaxHighlightingUrl)
+  })
+</script>
+
+
+
+  
+    <script type="module">
+      import mediumZoom from 'https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/+esm';
+      mediumZoom('#dream-single-post-content img', {
+        background: 'oklch(var(--b1))',
+        margin: 24,
+      })
+    </script>
+  
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PRKCD13VJ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PRKCD13VJ');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
