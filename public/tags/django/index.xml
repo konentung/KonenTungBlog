@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Aincrad</title>
+    <link>http://localhost:1313/tags/django/</link>
+    <description>Recent content in Django on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 07 Mar 2025 17:06:25 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Undergraduate Senior Project</title>
+      <link>http://localhost:1313/posts/undergraduate-senior-project/</link>
+      <pubDate>Fri, 07 Mar 2025 17:06:25 +0800</pubDate>
+      <guid>http://localhost:1313/posts/undergraduate-senior-project/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
