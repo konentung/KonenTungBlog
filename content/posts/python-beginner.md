@@ -30,9 +30,9 @@ Python
 2. 開啟下載後的安裝檔後先選擇加入環境變數後再點及安裝
     ![image](https://hackmd.io/_uploads/HkwjFZMOkl.png)
     ![image](https://hackmd.io/_uploads/rJF6IMf_1g.png)
-    :::warning
+    
     :warning: 如果沒有加到環境變數怎麼辦?
-    :::
+
     (1) 在設定中找到進階系統設定
         ![upload_d002a0ceb865b2ba0888dbe89275efb5](https://hackmd.io/_uploads/Hyfdjzzuyx.png)
     (2) 選擇環境變數
@@ -48,33 +48,33 @@ Python
 2. 開啟資料夾後在上面的路徑欄輸入cmd後按下enter開啟命令提示字元
 ![image](https://hackmd.io/_uploads/ByWaM7z_1x.png)
 3. 輸入下面指令建立虛擬環境
-```bash=
+```bash
 python -m venv <環境名稱>
 ```
 ![image](https://hackmd.io/_uploads/SkEK77M_Jx.png)
 4. 輸入指定切換路徑到activate的路徑
-```bash=
+```bash
 cd <環境名稱>/Script
 ```
 ![image](https://hackmd.io/_uploads/r1Mur7M_kx.png)
 5. 輸入指令切換虛擬環境
-```bash=
+```bash
 activate.bat
 ```
 ![image](https://hackmd.io/_uploads/ryhkLQfOyx.png)
 6. 安裝套件的指令(需先切換到requirements.txt的路徑位置)
-```bash=
+```bash
 pip install -r requirements.txt
 ```
 7. 離開虛擬環境指令
-```bash=
+```bash
 deactivate
 ```
 
 ## Python 基本語法
 
 * 輸入輸出
-```python=
+```python
 # 印出Hello World
 print("Hello World")
 # 跳出輸入框可以輸入
@@ -82,14 +82,14 @@ input("輸入的提示訊息")
 ```
 
 * 變數
-```python=
+```python
 int a = 5
 float b = 2.5
 str c = '你好'
 ```
 
 * 數學運算子
-```python=
+```python
 X + Y
 X - Y
 X * Y
@@ -100,7 +100,7 @@ X ** Y # X的Y次方
 ```
 
 * 流程控制
-```python=
+```python
 if <條件>:
     <執行的程式碼>
 elif<條件>:
@@ -110,13 +110,13 @@ else:
 ```
 
 * for迴圈
-```python=
+```python
 for <儲存的變數> in <序列型別的資料或數字>:
     <執行的程式碼>
 ```
 
 * while迴圈
-```python=
+```python
 while <成立的條件>:
     <執行的程式碼(需要有中止條件)>
 ```

@@ -4,8 +4,7 @@ socials = [
   { href = "https://x.com/Konentung", target = "_blank", icon = "logo-x", title = "X" },
   { href = "https://facebook.com/Konentung", target="_blank", icon = "logo-facebook", title = "Facebook" },
   { href = "https://instagram.com/hercules._.o7l6", target="_blank", icon = "logo-instagram", title = "Instagram" },
-  # { href = "https://www.linkedin.com/in/Konentung", target = "_blank", icon = "logo-linkedin", title = "Linkedin" },
-  # { href = "https://stackoverflow.com/users/5676489/Konentung", target = "_blank", icon = "logo-stackoverflow", title = "stack overflow" },
-  # { href = "https://codepen.io/Konentung", target="_blank", icon = "logo-codepen", title = "Codepen" },
-  { herf = "https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w", target = "_blank", icon = "logo-youtube", title = "Youtube"},
+  { href = "https://www.linkedin.com/in/%E4%BD%B3%E5%92%8C-%E8%91%A3-b1400330a/", target = "_blank", icon = "logo-linkedin", title = "Linkedin" },
+  { href = "https://stackoverflow.com/users/23608210/konentung", target = "_blank", icon = "logo-stackoverflow", title = "stack overflow" },
+  { href = "https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w", target = "_blank", icon = "logo-youtube", title = "Youtube"},
 ]

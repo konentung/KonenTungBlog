@@ -89,7 +89,7 @@ twitter = "Konentung"
 
 [params.navItems]
 github = { href = "https://github.com/konentung", target = "_blank", icon = "logo-github", title = "GitHub" }
-youtube = { herf = "https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w", target = "_blank", icon = "logo-youtube", title = "Youtube"}
+youtube = { href = "https://www.youtube.com/channel/UCNvqTutDuWw9gkf0nWayN1w", target = "_blank", icon = "logo-youtube", title = "Youtube"}
 
 [params.advanced]
 customCSS = ["css/custom.css"]

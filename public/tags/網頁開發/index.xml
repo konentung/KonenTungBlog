@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Aincrad</title>
-    <link>http://localhost:1313/tags/python/</link>
-    <description>Recent content in Python on Aincrad</description>
+    <title>網頁開發 on Aincrad</title>
+    <link>http://localhost:1313/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/</link>
+    <description>Recent content in 網頁開發 on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 07 Mar 2025 15:13:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django Beginner</title>
       <link>http://localhost:1313/posts/django-beginner/</link>
       <pubDate>Fri, 07 Mar 2025 15:13:04 +0800</pubDate>
       <guid>http://localhost:1313/posts/django-beginner/</guid>
       <description>&lt;p&gt;使用Django進行全端網頁開發，基礎的前置教學&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Python Beginner</title>
-      <link>http://localhost:1313/posts/python-beginner/</link>
-      <pubDate>Fri, 28 Feb 2025 18:38:44 +0800</pubDate>
-      <guid>http://localhost:1313/posts/python-beginner/</guid>
-      <description>&lt;p&gt;Python Venv 環境建置&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

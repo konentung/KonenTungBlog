@@ -6,8 +6,15 @@
     <description>Recent content on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 28 Feb 2025 20:57:52 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 15:13:04 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django Beginner</title>
+      <link>http://localhost:1313/posts/django-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 15:13:04 +0800</pubDate>
+      <guid>http://localhost:1313/posts/django-beginner/</guid>
+      <description>&lt;p&gt;使用Django進行全端網頁開發，基礎的前置教學&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Java Beginner</title>
       <link>http://localhost:1313/posts/java-beginner/</link>
