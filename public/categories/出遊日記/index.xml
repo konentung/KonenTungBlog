@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>出遊日記 on Aincrad</title>
+    <link>http://localhost:1313/categories/%E5%87%BA%E9%81%8A%E6%97%A5%E8%A8%98/</link>
+    <description>Recent content in 出遊日記 on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 10 Mar 2025 13:03:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%87%BA%E9%81%8A%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Summer</title>
+      <link>http://localhost:1313/posts/2023-summer/</link>
+      <pubDate>Mon, 10 Mar 2025 13:03:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2023-summer/</guid>
+      <description>&lt;p&gt;與高中同學的寒假出遊&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

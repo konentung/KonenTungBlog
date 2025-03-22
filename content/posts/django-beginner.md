@@ -166,3 +166,5 @@ urlpatterns = [
     path('/', posts_views.index), # 設定路由為此時執行的python view function
 ]
 ```
+
+> Reference：https://docs.djangoproject.com/en/4.2/

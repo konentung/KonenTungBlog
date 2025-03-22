@@ -6,8 +6,29 @@
     <description>Recent content in Python on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 07 Mar 2025 16:02:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Mar 2025 17:13:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Undergraduate Senior Project</title>
+      <link>http://localhost:1313/posts/undergraduate-senior-project/</link>
+      <pubDate>Fri, 07 Mar 2025 17:06:25 +0800</pubDate>
+      <guid>http://localhost:1313/posts/undergraduate-senior-project/</guid>
+      <description>&lt;p&gt;畢業專題的開發手冊，讓組員知道如何進行開發的流程，也讓我體驗一次PM究竟有多難當&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LineBot Beginner</title>
+      <link>http://localhost:1313/posts/linebot-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 16:43:30 +0800</pubDate>
+      <guid>http://localhost:1313/posts/linebot-beginner/</guid>
+      <description>&lt;p&gt;建立LINEBot以及使用LINEBot SDK進行聊天機器人的開發，裡面的筆記連結都是我參與撰寫的項目&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pygame Beginner</title>
+      <link>http://localhost:1313/posts/pygame-beginner/</link>
+      <pubDate>Fri, 07 Mar 2025 16:17:40 +0800</pubDate>
+      <guid>http://localhost:1313/posts/pygame-beginner/</guid>
+      <description>&lt;p&gt;Pygame的新手教學，用pygame製作簡易的動畫並學習物件導向程式設計&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Anaconda Beginner</title>
       <link>http://localhost:1313/posts/anaconda-beginner/</link>

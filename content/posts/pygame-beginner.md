@@ -5,7 +5,7 @@ lastmod: 2025-03-07T16:17:40+08:00
 author: Konen Tung
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-# cover: /img/cover.jpg
+cover: https://hackmd.io/_uploads/H1059ionye.png
 # images:
 #   - /img/cover.jpg
 categories:
@@ -181,3 +181,5 @@ pygame.display.update()  # 更新螢幕顯示
 :::success
 :thumbsup: 前面說明完了最基本的語法，有了這些語法我們可以開始製作簡易的動畫了
 :::
+
+> Reference：https://www.pygame.org/docs/

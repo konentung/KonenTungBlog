@@ -5,7 +5,7 @@ lastmod: 2025-03-07T16:43:30+08:00
 author: Konen Tung
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-# cover: /img/cover.jpg
+cover: https://hackmd.io/_uploads/ByIIiiihyx.png
 # images:
 #   - /img/cover.jpg
 categories:
@@ -22,6 +22,9 @@ tags:
 
 LineBot
 ===
+
+## 配合影片觀看
+### [🔗影片連結](https://www.youtube.com/watch?v=Mw3cODdkaFM)
 
 ## AILINEBot練功坊筆記
 
@@ -47,4 +50,3 @@ LineBot
 
 ### **部署與上線**
 - [部署 LINE Bot](https://hackmd.io/@ntuebigdata/deploy-linebot)
-

@@ -5,7 +5,7 @@ lastmod: 2025-03-07T17:06:25+08:00
 author: Konen Tung
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-# cover: /img/cover.jpg
+cover: https://hackmd.io/_uploads/HkfSAsinyl.png
 # images:
 #   - /img/cover.jpg
 categories:
