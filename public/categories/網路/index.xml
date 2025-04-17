@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網路 on Aincrad</title>
+    <link>http://localhost:1313/categories/%E7%B6%B2%E8%B7%AF/</link>
+    <description>Recent content in 網路 on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 17 Apr 2025 10:20:02 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E7%B6%B2%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco Packet Tracer</title>
+      <link>http://localhost:1313/posts/cisco-packet-tracer/</link>
+      <pubDate>Thu, 17 Apr 2025 10:20:02 +0800</pubDate>
+      <guid>http://localhost:1313/posts/cisco-packet-tracer/</guid>
+      <description>&lt;p&gt;網路應用與實務的課程內容，這裡紀錄大部分常用到的指令，並且整理一些比較基本的概念&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
