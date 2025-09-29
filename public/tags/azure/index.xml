@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on Aincrad</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <description>Recent content in Azure on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 12 Jul 2025 22:51:35 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft AI Course</title>
+      <link>http://localhost:1313/posts/microsoft-ai-course/</link>
+      <pubDate>Sat, 12 Jul 2025 22:51:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/microsoft-ai-course/</guid>
+      <description>&lt;p&gt;青年局課程-微軟的生成式AI開發應用&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
