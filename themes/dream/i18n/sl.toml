@@ -1,0 +1,44 @@
+[home]
+other = "Domača stran"
+
+[backToHome]
+other = "Vrnite se na domačo stran"
+
+[flip]
+other = "Obrniti!"
+
+[archives]
+other = "Arhiv"
+
+[allTags]
+other = "Vse oznake"
+
+[tag]
+other = "{{ .Count }} oznaki"
+
+[allCategories]
+other = "Vse kategorije"
+
+[category]
+other = "{{ .Count }} kategoriji"
+
+[article]
+other = "{{ .Count }} članka"
+
+[socialLinks]
+other = "Povezave do družabnih medijev"
+
+[minuteRead]
+other = " minuti za branje"
+
+[updatedAt]
+other = "Posodobljeno ob"
+
+[prevPage]
+other = "Prejšnja stran"
+
+[nextPage]
+other = "Naslednja stran"
+
+[search]
+other = "Iskanje"

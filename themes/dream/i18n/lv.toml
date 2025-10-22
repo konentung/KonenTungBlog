@@ -1,0 +1,44 @@
+[home]
+other = "Mājas lapa"
+
+[backToHome]
+other = "Atpakaļ uz sākumlapu"
+
+[flip]
+other = "Uzsist!"
+
+[archives]
+other = "Arhīvs"
+
+[allTags]
+other = "Visi tagi"
+
+[tag]
+other = "{{ .Count }} tagi"
+
+[allCategories]
+other = "Visas kategorijas"
+
+[category]
+other = "{{ .Count }} kategorijas"
+
+[article]
+other = "{{ .Count }} raksti"
+
+[socialLinks]
+other = "Saites sociālajos tīklos"
+
+[minuteRead]
+other = " minūtes lasīts"
+
+[updatedAt]
+other = "Atjaunināts plkst"
+
+[prevPage]
+other = "Iepriekšējā lapa"
+
+[nextPage]
+other = "Nākamā lapaspuse"
+
+[search]
+other = "Meklēt"

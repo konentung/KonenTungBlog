@@ -1,0 +1,44 @@
+[home]
+other = "الصفحة الرئيسية"
+
+[backToHome]
+other = "العودة إلى الصفحة الرئيسية"
+
+[flip]
+other = "!اقلب"
+
+[archives]
+other = "أرشيف"
+
+[allTags]
+other = "كل العلامات"
+
+[tag]
+other = "{{ .Count }} علامتان"
+
+[allCategories]
+other = "جميع الفئات"
+
+[category]
+other = "{{ .Count }} فئات"
+
+[article]
+other = "{{ .Count }} مقالات"
+
+[socialLinks]
+other = "روابط وسائل التواصل الاجتماعي"
+
+[minuteRead]
+other = " ست دقائق للقر"
+
+[updatedAt]
+other = "تم التحديث في"
+
+[prevPage]
+other = "الصفحة السابقة"
+
+[nextPage]
+other = "الصفحة التالية"
+
+[search]
+other = "يبحث"

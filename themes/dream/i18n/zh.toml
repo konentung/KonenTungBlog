@@ -1,0 +1,30 @@
+note = "注意"
+tip = "小提醒"
+important = "重要"
+warning = "警告"
+caution = "小心"
+
+home = "首頁"
+backToHome = "返回首頁"
+flip = "翻轉一下！"
+about = "關於"
+search = "搜尋"
+prevPage = "上一頁"
+nextPage = "下一頁"
+
+archives = "所有文章"
+allCategories = "所有分類"
+allTags = "所有標籤"
+
+minuteRead = "分鐘閱讀"
+updatedAt = "更新於"
+socialLinks = "社群連結"
+
+[article]
+other = "{{ .Count }}篇文章"
+
+[category]
+other = "{{ .Count }}分類"
+
+[tag]
+other = "{{ .Count }}標籤"

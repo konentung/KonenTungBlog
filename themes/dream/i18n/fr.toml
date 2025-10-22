@@ -1,0 +1,32 @@
+note = "Note"
+tip = "Astuce"
+important = "Important"
+warning = "Attention"
+caution = "Prudence"
+
+home = "Accueil"
+backToHome = "Revenir à l'accueil"
+flip = "Retourne ça !"
+about = "À propos"
+search = "Rechercher"
+prevPage = "Page précédente"
+nextPage = "Page suivante"
+
+archives = "Archives"
+allCategories = "Toutes les catégories"
+allTags = "Tous les étiquettes"
+
+updatedAt = "Mise à jour le"
+socialLinks = "Liens sociaux"
+
+[minuteRead]
+other = " minutes de lecture"
+
+[article]
+other = "{{ .Count }} articles"
+
+[category]
+other = "{{ .Count }} catégories"
+
+[tag]
+other = "{{ .Count }} étiquettes"
