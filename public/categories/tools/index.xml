@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Aincrad</title>
+    <link>http://localhost:1313/categories/tools/</link>
+    <description>Recent content in Tools on Aincrad</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 30 Dec 2025 20:20:05 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode Debug Launch Json</title>
+      <link>http://localhost:1313/posts/vscode-debug-launch-json/</link>
+      <pubDate>Tue, 30 Dec 2025 20:20:05 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vscode-debug-launch-json/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

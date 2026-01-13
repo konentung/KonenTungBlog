@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>開發環境建置 on Aincrad</title>
-    <link>https://konentung.pages.dev/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/</link>
+    <link>http://localhost:1313/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/</link>
     <description>Recent content in 開發環境建置 on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 22 Mar 2025 11:30:06 +0800</lastBuildDate>
-    <atom:link href="https://konentung.pages.dev/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Dec 2025 20:20:05 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode Debug Launch Json</title>
+      <link>http://localhost:1313/posts/vscode-debug-launch-json/</link>
+      <pubDate>Tue, 30 Dec 2025 20:20:05 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vscode-debug-launch-json/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java Beginner</title>
-      <link>https://konentung.pages.dev/posts/java-beginner/</link>
+      <link>http://localhost:1313/posts/java-beginner/</link>
       <pubDate>Fri, 28 Feb 2025 19:22:58 +0800</pubDate>
-      <guid>https://konentung.pages.dev/posts/java-beginner/</guid>
+      <guid>http://localhost:1313/posts/java-beginner/</guid>
       <description>&lt;p&gt;Java 開發環境建置&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python Beginner</title>
-      <link>https://konentung.pages.dev/posts/python-beginner/</link>
+      <link>http://localhost:1313/posts/python-beginner/</link>
       <pubDate>Fri, 28 Feb 2025 18:38:44 +0800</pubDate>
-      <guid>https://konentung.pages.dev/posts/python-beginner/</guid>
+      <guid>http://localhost:1313/posts/python-beginner/</guid>
       <description>&lt;p&gt;Python Venv 環境建置&lt;/p&gt;</description>
     </item>
   </channel>

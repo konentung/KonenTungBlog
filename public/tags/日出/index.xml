@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日出 on Aincrad</title>
-    <link>https://konentung.pages.dev/tags/%E6%97%A5%E5%87%BA/</link>
+    <link>http://localhost:1313/tags/%E6%97%A5%E5%87%BA/</link>
     <description>Recent content in 日出 on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Sat, 22 Mar 2025 11:30:06 +0800</lastBuildDate>
-    <atom:link href="https://konentung.pages.dev/tags/%E6%97%A5%E5%87%BA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%97%A5%E5%87%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 Summer</title>
-      <link>https://konentung.pages.dev/posts/2023-summer/</link>
+      <link>http://localhost:1313/posts/2023-summer/</link>
       <pubDate>Mon, 10 Mar 2025 13:03:47 +0800</pubDate>
-      <guid>https://konentung.pages.dev/posts/2023-summer/</guid>
+      <guid>http://localhost:1313/posts/2023-summer/</guid>
       <description>&lt;p&gt;與高中同學的寒假出遊&lt;/p&gt;</description>
     </item>
   </channel>

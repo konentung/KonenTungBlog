@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on Aincrad</title>
-    <link>https://konentung.pages.dev/tags/django/</link>
+    <link>http://localhost:1313/tags/django/</link>
     <description>Recent content in Django on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Sat, 22 Mar 2025 11:30:06 +0800</lastBuildDate>
-    <atom:link href="https://konentung.pages.dev/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Undergraduate Senior Project</title>
-      <link>https://konentung.pages.dev/posts/undergraduate-senior-project/</link>
+      <link>http://localhost:1313/posts/undergraduate-senior-project/</link>
       <pubDate>Fri, 07 Mar 2025 17:06:25 +0800</pubDate>
-      <guid>https://konentung.pages.dev/posts/undergraduate-senior-project/</guid>
+      <guid>http://localhost:1313/posts/undergraduate-senior-project/</guid>
       <description>&lt;p&gt;畢業專題的開發手冊，讓組員知道如何進行開發的流程，也讓我體驗一次PM究竟有多難當&lt;/p&gt;</description>
     </item>
   </channel>

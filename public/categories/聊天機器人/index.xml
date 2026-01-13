@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>聊天機器人 on Aincrad</title>
-    <link>https://konentung.pages.dev/categories/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/</link>
+    <link>http://localhost:1313/categories/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/</link>
     <description>Recent content in 聊天機器人 on Aincrad</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Sat, 22 Mar 2025 11:30:06 +0800</lastBuildDate>
-    <atom:link href="https://konentung.pages.dev/categories/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LineBot Beginner</title>
-      <link>https://konentung.pages.dev/posts/linebot-beginner/</link>
+      <link>http://localhost:1313/posts/linebot-beginner/</link>
       <pubDate>Fri, 07 Mar 2025 16:43:30 +0800</pubDate>
-      <guid>https://konentung.pages.dev/posts/linebot-beginner/</guid>
+      <guid>http://localhost:1313/posts/linebot-beginner/</guid>
       <description>&lt;p&gt;建立LINEBot以及使用LINEBot SDK進行聊天機器人的開發，裡面的筆記連結都是我參與撰寫的項目&lt;/p&gt;</description>
     </item>
   </channel>
