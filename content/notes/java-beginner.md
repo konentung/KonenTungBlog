@@ -29,7 +29,7 @@ JAVA_HOME
 ```
 變數值：
 ```bash
-C:Program Files/Java/jdk-XX<版本號>
+C:\Program Files\Java\jdk-XX<版本號>
 ```
 
 ### 安裝maven
@@ -37,11 +37,11 @@ C:Program Files/Java/jdk-XX<版本號>
 ![image](https://hackmd.io/_uploads/SkBcoqZ5yx.png)
 下載之後解壓縮並將`apache-maven-3.8.8`移動至以下路徑
 ```shell
-C:/Program Files
+C:\Program Files
 ```
 接著將以下路徑加入至環境變數→使用者環境變數→Path
 ```shell
-C:/Program Files/apache-maven-3.8.8/bin
+C:\Program Files\apache-maven-3.8.8\bin
 ```
 
 ## JAVA 程式語言定位
